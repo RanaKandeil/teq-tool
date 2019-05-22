@@ -1,0 +1,33 @@
+{
+	"packageParts": null,
+	"imports": {
+		"classImport": [{
+			"importString": "import com.google.gwt.core.client.GWT;"
+		}]
+	},
+	"classNameSuffix": "ServiceFactory",
+	"classExtends": null,
+	"classImplements": null,
+	"attributes": null,
+	"variables": "   private static dialogNameServiceAsync service;",
+	"methods": {
+		"methodCharacters": [{
+			"accessModifier": "   private",
+			"methodNameSuffix": "constructor()",
+			"returnType":"",
+			"override":"",
+			"params":"",
+			"methodContent": "",
+			"returnValue": ""
+		}, {
+			"accessModifier": "   public static",
+			"methodNameSuffix": "getService()",
+			"returnType": "dialogNameServiceAsync",
+			"override": "",
+			"params": "",
+			"methodContent": "      if (null == service) {\n      service = GWT.create(dialogNameService.class);\n      }",
+			"returnValue": "      return service;"
+		}]
+	},
+	"classTags": ""
+}

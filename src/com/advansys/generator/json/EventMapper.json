@@ -1,0 +1,29 @@
+{
+	"packageParts": null,
+	"imports": {
+		"classImport": [{
+				"importString": "import java.util.Arrays;"
+			}, {
+				"importString": "import java.util.List;"
+			}, {
+				"importString": "import com.dematic.projectName.dialogName.boundary.events.eventNameEvent;"
+			}, {
+				"importString": "import com.dematic.projectName.ui.client.dialogName.service.event.eventNamePushEvent;"
+			}, {
+				"importString": "import com.dematic.wms.app.base.ui.server.sp.PushEventMapper;"
+			}
+
+		]
+	},
+	"classNameSuffix": "EventMapperClass",
+	"classExtends": {},
+	"classImplements": {
+		"classImplementsInterfaces": ["PushEventMapper<eventNameEvent,eventNamePushEvent> "]
+	},
+	"attributes": null,
+	"methods": null,
+	"classTags": "",
+	"variables": ""
+
+
+}

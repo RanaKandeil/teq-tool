@@ -1,0 +1,21 @@
+{
+	"packageParts": null,
+	"imports": {
+		"classImport": [{
+			"importString": "import com.dematic.wms.app.base.ui.shared.service.common.ServerService;"
+		}, {
+			"importString": "import com.google.gwt.user.client.rpc.RemoteService;"
+		}, {
+			"importString": "import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;"
+		}]
+	},
+	"classNameSuffix": "ServiceInterface",
+	"classExtends": {
+		"classExtendsInterfaces": ["RemoteService", "ServerService"]
+	},
+	"classImplements": null,
+	"attributes": null,
+	"methods": null,
+	"classTags": "@RemoteServiceRelativePath(\"className.gwtrpc\") ",
+	"variables": ""
+}

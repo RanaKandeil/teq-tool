@@ -1,0 +1,61 @@
+{
+	"packageParts": null,
+	"imports": {
+		"classImport": [{
+				"importString": "import com.dematic.wms.app.base.ui.client.dialog.steps.StepView;"
+			}, {
+				"importString": "import com.google.gwt.core.client.GWT;"
+			}, {
+				"importString": "import com.google.gwt.uibinder.client.UiBinder;"
+			}, {
+				"importString": "import com.google.gwt.user.client.ui.Widget;"
+			}
+
+		]
+	},
+	"classNameSuffix": "CreateViewClass",
+	"classExtends": {
+		"classExtendsInterfaces": ["StepView"]
+	},
+	"classImplements": null,
+	"attributes": null,
+	"methods": {
+		"methodCharacters": [{
+			"accessModifier": "   interface",
+			"methodNameSuffix": "",
+			"returnType": "MyUiBinder extends UiBinder<Widget, nameOfview>",
+			"override": "",
+			"params": "",
+			"methodContent": "",
+			"returnValue": " "
+		}, {
+			"accessModifier": "   public",
+			"methodNameSuffix": "constructor()",
+			"returnType": "",
+			"override": "",
+			"params": "",
+			"methodContent": "      initWidget(createDetailPanel());",
+			"returnValue": " "
+		}, {
+			"accessModifier": "   protected",
+			"methodNameSuffix": "createDetailPanel()",
+			"returnType": "Widget",
+			"override": "   @Override",
+			"params": "",
+			"methodContent": "",
+			"returnValue": "      return super.createDetailPanel();"
+		}, {
+			"accessModifier": "   protected",
+			"methodNameSuffix": "getUiBinder()",
+			"returnType": "UiBinder<Widget, nameOfview>",
+			"override": "   @Override",
+			"params": "",
+			"methodContent": "",
+			"returnValue": "      return uiBinder;"
+		}]
+	},
+	"classTags": "",
+	"variables": "   private static MyUiBinder uiBinder = GWT.create(MyUiBinder.class);"
+
+
+}

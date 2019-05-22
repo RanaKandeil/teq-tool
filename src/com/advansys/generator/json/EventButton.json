@@ -1,0 +1,16 @@
+{
+  "imports": {
+    "classImport": [{
+      "importString": "import com.dematic.wms.app.base.ui.shared.dialog.steps.common.StepEvent;"
+    }]
+  },
+  "classNameSuffix": "Event",
+  "classExtends": {
+    "classExtendsInterfaces": ["StepEvent"]
+  },
+  "classImplements": "",
+  "attributes": "",
+  "methods": "",
+  "classTags": "",
+  "variables": ""
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0" prefWidth="971.0" styleClass="Background" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OVDialogController">
+    <children>
+        <Pane layoutY="135.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="970.0" styleClass="pane" stylesheets="@../Style.css" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="135.0">
+            <children>
+                <Button fx:id="NormalExtensionsButton" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="60.0" layoutY="112.0" mnemonicParsing="false" onAction="#NormalExtensionBtnAction" prefHeight="290.0" prefWidth="397.0" styleClass="first" stylesheets="@../Style.css" text="Normal Extensions" textAlignment="CENTER" textFill="#191a19">
+                    <font>
+                        <Font name="System Bold" size="21.0" />
+                    </font>
+                </Button>
+                <Button fx:id="PreDefinedTasksButton" alignment="BOTTOM_CENTER" layoutX="501.0" layoutY="112.0" mnemonicParsing="false" onAction="#PreDefinedTaskBtnAction" prefHeight="290.0" prefWidth="374.0" styleClass="third" stylesheets="@../Style.css" text="Pre-Defined Tasks">
+                    <font>
+                        <Font name="System Bold" size="21.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Button id="settingbtn" layoutX="52.0" layoutY="703.0" mnemonicParsing="false" onAction="#settingButtonAction" prefHeight="45.0" prefWidth="108.0" styleClass="Createbutton" stylesheets="@../Style.css" text="Setting" />
+        <ImageView fitHeight="55.0" fitWidth="200.0" layoutX="386.0" layoutY="27.0">
+            <image>
+                <Image url="@../images/TEQToolLogo.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="31.0" fitWidth="141.0" layoutX="816.0" layoutY="771.0">
+            <image>
+                <Image url="@../images/AdvansysLogo.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="backbtn" layoutX="774.0" layoutY="703.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="45.0" prefWidth="127.0" styleClass="backbutton" stylesheets="@../Style.css" />
+    </children>
+</AnchorPane>

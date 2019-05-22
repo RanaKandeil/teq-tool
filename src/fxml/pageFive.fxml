@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="818.0"
+            prefWidth="971.0" styleClass="Background" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PushEventController">
+    <children>
+        <Pane layoutY="135.0" prefHeight="531.0" prefWidth="970.0" styleClass="pane">
+            <children>
+                <Label layoutX="580.0" layoutY="48.0" prefHeight="27.0" prefWidth="130.0" text="Dialog class name">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="594.0" layoutY="110.0" prefHeight="27.0" prefWidth="113.0" text="Step class name">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="556.0" layoutY="174.0" text="Push event class name">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label layoutX="96.0" layoutY="239.0" prefHeight="27.0" prefWidth="130.0" text="Event attributes">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <TableView fx:id="keyvalueTable" layoutX="237.0" layoutY="239.0" prefHeight="209.0" prefWidth="599.0"
+                           styleClass="Table" stylesheets="@../Style.css">
+                    <columns>
+                        <TableColumn fx:id="keyColumn" prefWidth="300.0">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="key"/>
+                            </cellValueFactory>
+                        </TableColumn>
+
+                        <TableColumn fx:id="valueColumn" prefWidth="298.0">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="value"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <Label layoutX="237.0" layoutY="238.0" prefHeight="31.0" prefWidth="299.0" styleClass="Tablelabels"
+                       stylesheets="@../Style.css" text="                                Attribute" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="539.0" layoutY="239.0" prefHeight="31.0" prefWidth="299.0" styleClass="Tablelabels"
+                       stylesheets="@../Style.css" text="                            Type" textAlignment="CENTER"
+                       textFill="#f5f5f5">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="AttributeTextField" layoutX="235.0" layoutY="460.0" promptText="Attribute"
+                           styleClass="TextField" stylesheets="@../Style.css"/>
+                <Button fx:id="addRow" layoutX="669.0" layoutY="460.0" mnemonicParsing="false" onAction="#addRowAction"
+                        prefHeight="31.0" prefWidth="77.0" styleClass="Button" stylesheets="@../Style.css" text="Add">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="removeRow" layoutX="757.0" layoutY="461.0" mnemonicParsing="false"
+                        onAction="#removeRowAction" prefHeight="32.0" prefWidth="77.0" styleClass="Button"
+                        stylesheets="@../Style.css" text="Remove">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <ComboBox fx:id="value" layoutX="447.0" layoutY="460.0" prefHeight="31.0" prefWidth="178.0"
+                          promptText="Type" styleClass="TextField" stylesheets="@../Style.css">
+
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Integer"/>
+                            <String fx:value="String"/>
+                            <String fx:value="Boolean"/>
+                            <String fx:value="Char"/>
+                            <String fx:value="Short"/>
+                            <String fx:value="Long"/>
+                            <String fx:value="int"/>
+                            <String fx:value="boolean"/>
+                            <String fx:value="long"/>
+                            <String fx:value="BigDecimal"/>
+
+                        </FXCollections>
+                    </items>
+
+                </ComboBox>
+                <Label layoutX="121.0" layoutY="51.0" text="Project path">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="114.0" layoutY="115.0" text="Project name">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="130.0" layoutY="184.0" text="User name">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Button fx:id="browseButton" layoutX="449.0" layoutY="45.0" mnemonicParsing="false"
+                        onAction="#browseButtonAction" prefHeight="32.0" prefWidth="72.0" styleClass="Button"
+                        stylesheets="@../Style.css" text="Browse">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <TextField fx:id="projectPath" editable="false" layoutX="235.0" layoutY="44.0" styleClass="TextField"
+                           stylesheets="@../Style.css"/>
+                <TextField fx:id="projectName" layoutX="234.0" layoutY="111.0" styleClass="TextField"
+                           stylesheets="@../Style.css"/>
+                <TextField fx:id="userName" layoutX="235.0" layoutY="175.0" styleClass="TextField"
+                           stylesheets="@../Style.css"/>
+                <TextField fx:id="dialogClassName" layoutX="724.0" layoutY="44.0" styleClass="TextField"
+                           stylesheets="@../Style.css"/>
+                <TextField fx:id="stepClassName" layoutX="724.0" layoutY="111.0" styleClass="TextField"
+                           stylesheets="@../Style.css"/>
+                <TextField fx:id="pushEventClassName" layoutX="724.0" layoutY="171.0" styleClass="TextField"
+                           stylesheets="@../Style.css"/>
+                <Label fx:id="requiredProjectPath" layoutX="300.0" layoutY="52.0" text="required" textFill="#ee0808"
+                       visible="false"/>
+                <Label fx:id="requiredProjectName" layoutX="301.0" layoutY="117.0" text="required" textFill="#ee0808"
+                       visible="false"/>
+                <Label fx:id="requiredUserName" layoutX="301.0" layoutY="181.0" text="required" textFill="#ee0808"
+                       visible="false"/>
+                <Label fx:id="requiredDialogClassName" layoutX="790.0" layoutY="50.0" text="required" textFill="#ee0808"
+                       visible="false"/>
+                <Label fx:id="requiredStepClassName" layoutX="790.0" layoutY="117.0" text="required" textFill="#ee0808"
+                       visible="false"/>
+                <Label fx:id="requiredPushEventClassName" layoutX="795.0" layoutY="177.0" text="required"
+                       textFill="#ee0808" visible="false"/>
+            </children>
+        </Pane>
+        <Button fx:id="backButton" layoutX="61.0" layoutY="694.0" mnemonicParsing="false" onAction="#backButtonAction"
+                prefHeight="45.0" prefWidth="121.0" styleClass="backbutton" stylesheets="@../Style.css"/>
+        <Button fx:id="createnewpushevent" layoutX="709.0" layoutY="694.0" mnemonicParsing="false"
+                onAction="#createNewPushEvent" prefHeight="45.0" prefWidth="172.0" styleClass="Createbutton"
+                stylesheets="@../Style.css" text="Create new push event">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <ImageView fitHeight="55.0" fitWidth="200.0" layoutX="386.0" layoutY="27.0">
+            <image>
+                <Image url="@../images/TECTOOL.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="31.0" fitWidth="141.0" layoutX="816.0" layoutY="771.0">
+            <image>
+                <Image url="@../images/ADVLOGO.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

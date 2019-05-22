@@ -1,0 +1,130 @@
+.TextField{
+
+  -fx-border-radius: 30 30 30 30;
+  -fx-border-color: green;
+  -fx-background-radius: 30 30 30 30;
+  -fx-background-color:  white;
+  -fx-border-style: solid;
+  -fx-text-fill: black;
+  
+  
+}
+
+.TopBottomPane{
+	
+	-fx-background-color: linear-gradient(to bottom right, black, green);
+	
+}
+.Background{
+	
+-fx-background-color: #EAE7E6;
+	
+}
+
+
+.Createbutton{
+	
+	-fx-background-color: #2DC550;
+}
+
+.Createbutton:hover{
+	
+	-fx-background-color: #3e8e41;
+	
+}
+
+.Createbutton:active {
+	
+  -fx-background-color: #3e8e41;
+  -fx-box-shadow-color: #666;
+  
+  
+}
+.backbutton{
+	
+	-fx-background-image: url("images/m.png");
+	-fx-background-color: #EAE7E6;
+	-fx-background-repeat: no-repeat;
+
+}
+
+.backbutton:hover{
+	
+	-fx-background-image: url("images/m.png");
+	-fx-background-color: #EAE7E6;
+	-fx-background-repeat: no-repeat;
+}
+
+.Button{
+    -fx-background-color: #F4F2EF;
+	-fx-border: 2000px;
+    -fx-border-color: lightgreen;
+}
+
+.Button:hover {
+    -fx-background-color: #edebe8;
+	
+}
+	
+.pane{
+	
+	-fx-background-color: #EAE7E6;
+	-fx-background-radius: 20 20 20 20;
+	-fx-border-width: 5px;
+	-fx-border-radius: 15 15 15 15;
+    -fx-border-color: lightgrey;
+}
+
+.Table{
+ 	
+    -fx-background-color: linear-gradient(white, lightgrey);
+    
+    }
+
+.Tablelabels{
+	
+	-fx-background-color: #2DC550;
+}
+
+.pageSixPane{
+	
+	-fx-background-color: #AEB6BF;
+}
+
+.first{
+	-fx-background-image: url("images/DialogButton.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+
+.first:hover{
+	-fx-background-image: url("images/DialogButtonHover.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-text-fill: #4CAF50;
+}
+
+.second{
+	-fx-background-image: url("images/StepButton.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+.second:hover{
+	-fx-background-image: url("images/StepButtonHover.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-text-fill: #4CAF50;
+}
+
+.third{
+	-fx-background-image: url("images/newpusheventbutton.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+
+.third:hover{
+	-fx-background-image: url("images/25originalpusheventbuttonhover.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-text-fill: #4CAF50;
+}

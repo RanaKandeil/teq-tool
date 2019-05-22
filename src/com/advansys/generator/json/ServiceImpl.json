@@ -1,0 +1,22 @@
+{
+	"packageParts": null,
+	"imports": {
+		"classImport": [{
+			"importString": "import com.dematic.wms.app.base.ui.server.AppRemoteServerService;"
+		}, {
+			"importString": "import com.dematic.projectName.ui.client.dialogName.service.serviceDialogName;"
+
+		}]
+	},
+	"classNameSuffix": "Service",
+	"classExtends": {
+		"classExtendsInterfaces": ["AppRemoteServerService"]
+	},
+	"classImplements":{
+	"classImplementsInterfaces":[ "dialogNameService"]
+	},
+	"attributes": null,
+	"methods": null,
+	"classTags": "  ",
+	"variables": ""
+}

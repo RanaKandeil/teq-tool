@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0"
+            prefWidth="1254.0" styleClass="Background" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewStepController">
+    <children>
+        <Pane layoutX="1.0" layoutY="113.0" prefHeight="432.0" prefWidth="1254.0" styleClass="pane"
+              stylesheets="@../Style.css" AnchorPane.bottomAnchor="129.0" AnchorPane.topAnchor="113.0">
+            <children>
+                <Pane layoutX="14.0" layoutY="27.0" prefHeight="273.0" prefWidth="401.0" styleClass="pane"
+                      stylesheets="@../Style.css">
+                    <children>
+                        <Label layoutX="51.0" layoutY="21.0" text="Project path">
+                            <font>
+                                <Font name="Arial Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="46.0" layoutY="79.0" text="Project name">
+                            <font>
+                                <Font name="Arial Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="61.0" layoutY="135.0" text="User name">
+                            <font>
+                                <Font name="Arial Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="9.0" layoutY="192.0" text="Dialog class name">
+                            <font>
+                                <Font name="Arial Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="ProjectPathTextField" layoutX="137.0" layoutY="15.0" prefHeight="33.0"
+                                   prefWidth="177.0" editable="false" styleClass="TextField" stylesheets="@../Style.css"/>
+                        <TextField fx:id="ProjectName" layoutX="137.0" layoutY="71.0" prefHeight="33.0"
+                                   prefWidth="177.0" styleClass="TextField" stylesheets="@../Style.css"/>
+                        <TextField fx:id="UserName" layoutX="137.0" layoutY="127.0" prefHeight="33.0" prefWidth="177.0"
+                                   styleClass="TextField" stylesheets="@../Style.css"/>
+                        <TextField fx:id="DialogClassName" layoutX="137.0" layoutY="183.0" prefHeight="33.0"
+                                   prefWidth="177.0" styleClass="TextField" stylesheets="@../Style.css"/>
+                        <Button fx:id="BrowsBtn" layoutX="319.0" layoutY="16.0" mnemonicParsing="false"
+                                onAction="#browseButtonAction" prefHeight="33.0" prefWidth="72.0" styleClass="Button"
+                                stylesheets="@../Style.css" text="Browse">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Button>
+                        <Label fx:id="requiredDialogClassName" layoutX="198.0" layoutY="189.0" text="required"
+                               textFill="#ee0808" visible="false"/>
+                    </children>
+                </Pane>
+                <Pane layoutX="423.0" layoutY="27.0" prefHeight="326.0" prefWidth="375.0" styleClass="pane"
+                      stylesheets="@../Style.css">
+                    <children>
+                        <Label layoutX="14.0" layoutY="28.0" text="Dialog package name ">
+                            <font>
+                                <Font name="Arial Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="83.0" text="Steps package name ">
+                            <font>
+                                <Font name="Arial Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="137.0" text="Views package name ">
+                            <font>
+                                <Font name="Arial Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="193.0" text="Service client side ">
+                            <font>
+                                <Font name="Arial Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="33.0" layoutY="253.0" text="Service server side ">
+                            <font>
+                                <Font name="Arial Bold" size="14.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="DialogPackageName" layoutX="172.0" layoutY="20.0" styleClass="TextField"
+                                   stylesheets="@../Style.css"/>
+                        <TextField fx:id="StepsPackageName" layoutX="172.0" layoutY="75.0" styleClass="TextField"
+                                   stylesheets="@../Style.css"/>
+                        <TextField fx:id="ViewsPackageName" layoutX="172.0" layoutY="129.0" styleClass="TextField"
+                                   stylesheets="@../Style.css"/>
+                        <TextField fx:id="ServiceClientSide" layoutX="172.0" layoutY="185.0" styleClass="TextField"
+                                   stylesheets="@../Style.css"/>
+                        <TextField fx:id="ServiceServerSide" layoutX="172.0" layoutY="245.0" styleClass="TextField"
+                                   stylesheets="@../Style.css"/>
+                        <Label fx:id="requiredDialogPackageName" layoutX="238.0" layoutY="26.0" text="required"
+                               textFill="#ee0808" visible="false"/>
+                        <Label fx:id="requiredStepsPackageName" layoutX="238.0" layoutY="81.0" text="required"
+                               textFill="#ee0808" visible="false"/>
+                        <Label fx:id="requiredViewsPackageName" layoutX="238.0" layoutY="135.0" text="required"
+                               textFill="#ee0808" visible="false"/>
+                        <Label fx:id="requiredServiceClientSide" layoutX="238.0" layoutY="191.0" text="required"
+                               textFill="#ee0808" visible="false"/>
+                        <Label fx:id="requiredServiceServerSide" layoutX="238.0" layoutY="251.0" text="required"
+                               textFill="#ee0808" visible="false"/>
+                    </children>
+                </Pane>
+                <Pane layoutX="814.0" layoutY="27.0" prefHeight="273.0" prefWidth="432.0" styleClass="pane"
+                      stylesheets="@../Style.css">
+                    <children>
+                        <Label layoutX="60.0" layoutY="79.0" text="GWT paths">
+                            <font>
+                                <Font name="Arial Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="128.0" text="appCore Version">
+                            <font>
+                                <Font name="Arial Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="177.0" text="wms Version">
+                            <font>
+                                <Font name="Arial Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="59.0" layoutY="227.0" text="cor Version">
+                            <font>
+                                <Font name="Arial Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="GwtRoot" layoutX="159.0" layoutY="71.0" styleClass="TextField"
+                                   stylesheets="@../Style.css"/>
+                        <TextField fx:id="AppCoreVersion" layoutX="159.0" layoutY="120.0" styleClass="TextField"
+                                   stylesheets="@../Style.css"/>
+                        <TextField fx:id="WmsVersion" layoutX="159.0" layoutY="169.0" styleClass="TextField"
+                                   stylesheets="@../Style.css"/>
+                        <TextField fx:id="CorVersion" layoutX="159.0" layoutY="219.0" styleClass="TextField"
+                                   stylesheets="@../Style.css"/>
+                        <Label fx:id="requiredRepoRoot" layoutX="236.0" layoutY="27.0" text="required"
+                               textFill="#ee0808" visible="false"/>
+                        <Label fx:id="requiredGWTpath" layoutX="236.0" layoutY="77.0" text="required" textFill="#ee0808"
+                               visible="false"/>
+                        <Label fx:id="requiredAppCoreVersion" layoutX="236.0" layoutY="126.0" text="required"
+                               textFill="#ee0808" visible="false"/>
+                        <Label fx:id="requiredwmsVersion" layoutX="236.0" layoutY="175.0" text="required"
+                               textFill="#ee0808" visible="false"/>
+                        <Label fx:id="requiredCoreVersion" layoutX="236.0" layoutY="225.0" text="required"
+                               textFill="#ee0808" visible="false"/>
+                        <Label layoutX="65.0" layoutY="29.0" text="Repo root">
+                            <font>
+                                <Font name="Arial Bold" size="15.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="RepoRoot" layoutX="160.0" layoutY="22.0" editable="false"
+                                   styleClass="TextField" stylesheets="@../Style.css"/>
+                        <Button layoutX="353.0" layoutY="23.0" mnemonicParsing="false"
+                                onAction="#repoRootbrowseButtonAction" styleClass="Button" stylesheets="@../Style.css"
+                                text="Browse"/>
+                        <Label fx:id="requiredRepoRoot" layoutX="236.0" layoutY="27.0" text="required"
+                               textFill="#ee0808" visible="false"/>
+                    </children>
+                </Pane>
+                <Button fx:id="ContinueButton" layoutX="353.0" layoutY="371.0" mnemonicParsing="false"
+                        onAction="#continueButtonAction" prefHeight="40.0" prefWidth="558.0" styleClass="Createbutton"
+                        stylesheets="@../Style.css" text="Continue">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Button fx:id="backbutton" layoutX="46.0" layoutY="554.0" mnemonicParsing="false" onAction="#backButtonAction"
+                prefHeight="49.0" prefWidth="125.0" styleClass="backbutton" stylesheets="@../Style.css"/>
+        <ImageView fitHeight="55.0" fitWidth="200.0" layoutX="490.0" layoutY="30.0">
+            <image>
+                <Image url="@../images/TEQToolLogo.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="31.0" fitWidth="141.0" layoutX="1092.0" layoutY="629.0">
+            <image>
+                <Image url="@../images/ADVLOGO.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

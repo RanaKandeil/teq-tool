@@ -1,0 +1,69 @@
+{
+	"imports": {
+		"classImport": [{
+				"importString": "import com.dematic.wms.app.base.ui.client.scomponent.MainDialog;"
+			}, {
+				"importString": "import com.google.gwt.core.client.GWT;"
+			}, {
+				"importString": "import com.dematic.wms.app.base.ui.client.dialog.steps.StepByStepDialog;"
+			}, {
+				"importString": "import com.dematic.wms.app.base.ui.client.dialog.steps.Step;"
+			}, {
+				"importString": "import com.dematic.projectName.ui.client.dialogName.steps.*;"
+			}, {
+				"importString": "import com.dematic..projectName.ui.client.dialogName.views.*;"
+			}
+		]
+	},
+	"classNameSuffix": "OperationDialog",
+	"classExtends": "StepByStepDialog",
+	"classImplements": {
+		"classImplementsInterfaces": ["BaseClass", "ay7aga"]
+	},
+	"attributes": {
+		"attributeCharacterss": [{
+				"attributeName": "orderId",
+				"attributeSetter": true,
+				"attributeGetter": true,
+				"dataType": "String"
+			}, {
+				"attributeName": "orderLineId",
+				"attributeSetter": true,
+				"attributeGetter": true,
+				"dataType": "String"
+			}
+		]
+	},
+	"methods": {
+		"methodCharacters": [{
+				"accessModifier": "protected",
+				"methodNameSuffix": "createViews",
+				"returnType": "Step",
+				"override": true,
+				"params": [{
+						"pramName": "skuId",
+						"paramType": "String"
+					}, {
+						"pramName": "skuName",
+						"paramType": "String"
+					}
+				],
+				"methodContent": "setWidth(1200 + \"px\");\n      setHeight(900 + \"px\");",
+				"returnValue": null
+			}, {
+				"accessModifier": "protected",
+				"methodNameSuffix": null,
+				"returnType": "void",
+				"override": false,
+				"params": [{
+						"pramName": "skuId",
+						"paramType": "String"
+					}
+				],
+				"methodContent": null,
+				"returnValue": null
+			}
+		]
+	},
+	"classTags": "@MainDialog"
+}

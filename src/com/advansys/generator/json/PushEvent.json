@@ -1,0 +1,21 @@
+{
+	"packageParts": null,
+	"imports": {
+		"classImport": [{
+				"importString": "import com.dematic.wms.app.base.ui.shared.service.StepPushEvent;"
+			}
+
+		]
+	},
+	"classNameSuffix": "PushEventClass",
+	"classExtends": {
+		"classExtendsInterfaces": ["StepPushEvent"]
+	},
+	"classImplements": null,
+	"attributes": null,
+	"methods": null,
+	"classTags": "",
+	"variables": "   private static final long serialVersionUID = 1L;"
+
+
+}

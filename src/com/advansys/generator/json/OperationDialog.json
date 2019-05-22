@@ -1,0 +1,28 @@
+{
+	"packageParts": null,
+	"imports": {
+		"classImport": [{
+				"importString": "import com.dematic.wms.app.base.ui.client.scomponent.MainDialog;"
+			}, {
+				"importString": "import com.google.gwt.core.client.GWT;"
+			}, {
+				"importString": "import com.dematic.wms.app.base.ui.client.dialog.steps.StepByStepDialog;"
+			}, {
+				"importString": "import com.dematic.wms.app.base.ui.client.dialog.steps.Step;"
+			}, {
+				"importString": "import com.dematic.projectName.ui.client.dialogName.steps.*;"
+			}, {
+				"importString": "import com.dematic.projectName.ui.client.dialogName.views.*;"
+			}
+		]
+	},
+	"classNameSuffix": "OperationDialog",
+	"classExtends": {
+		"classExtendsInterfaces": ["StepByStepDialog"]
+	},
+	"classImplements": null,
+	"attributes": null,
+	"methods": null,
+	"classTags": "@MainDialog",
+	"variables": ""
+}

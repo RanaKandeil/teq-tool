@@ -1,0 +1,53 @@
+{
+	"packageParts": null,
+	"imports": {
+		"classImport": [{
+				"importString": "import com.dematic.wms.app.base.ui.client.dialog.steps.AbstractStep;"
+			}, {
+				"importString": "import com.dematic.wms.app.base.ui.shared.dialog.steps.common.StepEvent;"
+			}, {
+				"importString": "import com.dematic.wms.app.base.ui.shared.dto.DtoContext;"
+			}, {
+				"importString": "import com.dematic.projectName.ui.client.dialogName.views.*;"
+			}
+
+		]
+	},
+	"classNameSuffix": "CreateStepClass",
+	"classExtends": {
+		"classExtendsInterfaces": ["AbstractStep<nameOfview , DtoContext>"]
+	},
+	"classImplements": null,
+	"attributes": null,
+	"methods": {
+		"methodCharacters": [{
+			"accessModifier": "   public void",
+			"methodNameSuffix": "prepare()",
+			"returnType": "",
+			"override": "   @Override",
+			"params": "",
+			"methodContent": "      getView().setEventEnabled(SwitchToOtherStepEvent.class, true);eventButton",
+			"returnValue":""
+		}, {
+			"accessModifier": "   public void ",
+			"methodNameSuffix": "processEvent(StepEvent event)",
+			"returnType": "",
+			"override": "   @Override",
+			"params": "",
+			"methodContent": "      if (event instanceof SwitchToOtherStepEvent) { replyEventResult(nextStep); }",
+			"returnValue": ""
+		}, {
+			"accessModifier": "   public",
+			"methodNameSuffix": "createEmptyDtoContext()",
+			"returnType": "DtoContext",
+			"override": "   @Override",
+			"params": "",
+			"methodContent": "",
+			"returnValue": "      return new DtoContext();"
+		}]
+	},
+	"classTags": "",
+	"variables": ""
+
+
+}

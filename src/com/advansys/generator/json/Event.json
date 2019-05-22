@@ -1,0 +1,21 @@
+{
+	"packageParts": null,
+	"imports": {
+		"classImport": [{
+				"importString": "import com.dematic.wms.app.event.boundary.BaseEvent;"
+			}
+
+		]
+	},
+	"classNameSuffix": "EventClass",
+	"classExtends": {
+		"classExtendsInterfaces": ["BaseEvent"]
+	},
+	"classImplements": null,
+	"attributes": null,
+	"methods": null,
+	"classTags": "",
+	"variables": null
+
+
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="826.0"
+            prefWidth="971.0" styleClass="Background" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PageThreeController">
+    <children>
+        <Button fx:id="backButton" layoutX="61.0" layoutY="694.0" mnemonicParsing="false" onAction="#backButtonAction"
+                prefHeight="45.0" prefWidth="121.0" styleClass="backbutton" stylesheets="@../Style.css">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </Button>
+        <Pane layoutX="1.0" layoutY="135.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="531.0"
+              prefWidth="971.0" styleClass="pane" stylesheets="@../Style.css" AnchorPane.bottomAnchor="160.0"
+              AnchorPane.topAnchor="135.0">
+            <children>
+                <Label layoutX="115.0" layoutY="97.0" prefHeight="21.0" prefWidth="107.0" stylesheets="@../Style.css"
+                       text="Project Name">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="projectName" layoutX="226.0" layoutY="91.0" prefHeight="29.0" prefWidth="187.0"
+                           styleClass="TextField" stylesheets="@../Style.css"/>
+                <Label layoutX="115.0" layoutY="48.0" prefHeight="21.0" prefWidth="94.0" stylesheets="@../Style.css"
+                       text="Project Path">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="projectPath" disable="false" layoutX="225.0" layoutY="43.0" prefHeight="27.0"
+                           prefWidth="187.0" editable="false" styleClass="TextField" stylesheets="@../Style.css"/>
+                <Button fx:id="browseButton" layoutX="431.0" layoutY="43.0" mnemonicParsing="false"
+                        onAction="#browseButtonAction" prefHeight="31.0" prefWidth="82.0" styleClass="Button"
+                        stylesheets="@../Style.css" text="Browse">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Label layoutX="545.0" layoutY="48.0" prefHeight="21.0" prefWidth="82.0" text="User Name">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <Label layoutX="533.0" layoutY="97.0" prefHeight="21.0" prefWidth="94.0" text="Dialog Name">
+                    <font>
+                        <Font name="Arial Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="userName" layoutX="644.0" layoutY="42.0" styleClass="TextField"
+                           stylesheets="@../Style.css"/>
+                <TextField fx:id="dialogName" layoutX="644.0" layoutY="91.0" styleClass="TextField"
+                           stylesheets="@../Style.css"/>
+                <TableView fx:id="stepTableView" layoutX="115.0" layoutY="147.0" prefHeight="267.0" prefWidth="718.0"
+                           styleClass="Table" stylesheets="@../Style.css">
+                    <columns>
+                        <TableColumn fx:id="stepColumn" prefWidth="367.0" text="Step">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="step"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="viewColumn" prefWidth="350.0" text="View">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="view"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <TextField fx:id="step" layoutX="115.0" layoutY="428.0" prefHeight="31.0" prefWidth="256.0"
+                           promptText="Step" styleClass="TextField" stylesheets="@../Style.css"/>
+                <TextField fx:id="view" layoutX="392.0" layoutY="428.0" prefHeight="31.0" prefWidth="238.0"
+                           promptText="View" styleClass="TextField" stylesheets="@../Style.css"/>
+                <Button fx:id="addRow" layoutX="659.0" layoutY="429.0" mnemonicParsing="false" onAction="#addRowAction"
+                        prefHeight="33.0" prefWidth="82.0" styleClass="Button" stylesheets="@../Style.css" text="Add">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="removeRow" layoutX="754.0" layoutY="430.0" mnemonicParsing="false"
+                        onAction="#removeRowAction" prefHeight="32.0" prefWidth="82.0" styleClass="Button"
+                        stylesheets="@../Style.css" text="Remove">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <CheckBox fx:id="chooseFromExistingView" layoutX="392.0" layoutY="485.0" mnemonicParsing="false"
+                          onAction="#onChooseFromExistingViewEvent" styleClass="Button" stylesheets="@../Style.css"
+                          text="Existing View?"/>
+                <ComboBox fx:id="alreadyExistingView" layoutX="529.0" layoutY="479.0" prefHeight="33.0"
+                          prefWidth="101.0" styleClass="TextField" stylesheets="@../Style.css"/>
+                <CheckBox fx:id="generateEventButton" layoutX="115.0" layoutY="485.0" mnemonicParsing="false"
+                          styleClass="Button" stylesheets="@../Style.css" text="Generate Event Button"/>
+                <Label layoutX="115.0" layoutY="147.0" prefHeight="31.0" prefWidth="367.0" styleClass="Tablelabels"
+                       stylesheets="@../Style.css" text="                                     Steps" textFill="WHITE"/>
+                <Label layoutX="486.0" layoutY="147.0" prefHeight="31.0" prefWidth="346.0" styleClass="Tablelabels"
+                       stylesheets="@../Style.css" text="                                       View" textFill="WHITE"/>
+                <Label fx:id="requiredProjectPath" layoutX="291.0" layoutY="48.0" text="required" textFill="#ee0808"
+                       visible="false"/>
+                <Label fx:id="requiredProjectName" layoutX="292.0" layoutY="97.0" text="required" textFill="#ee0808"
+                       visible="false"/>
+                <Label fx:id="requiredDialogName" layoutX="710.0" layoutY="97.0" text="required" textFill="#ee0808"
+                       visible="false"/>
+                <Label fx:id="requiredUserName" layoutX="713.0" layoutY="49.0" text="required" textFill="#ee0808"
+                       visible="false"/>
+            </children>
+        </Pane>
+        <Button fx:id="createNewButton" layoutX="709.0" layoutY="694.0" mnemonicParsing="false"
+                onAction="#createNewButtonAction" prefHeight="45.0" prefWidth="173.0" styleClass="Createbutton"
+                stylesheets="@../Style.css" text="Create New Dialog">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Button>
+        <ImageView fitHeight="31.0" fitWidth="141.0" layoutX="816.0" layoutY="771.0">
+            <image>
+                <Image url="@../images/ADVLOGO.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="55.0" fitWidth="200.0" layoutX="386.0" layoutY="27.0">
+            <image>
+                <Image url="@../images/TEQToolLogo.png"/>
+            </image>
+        </ImageView>
+
+    </children>
+</AnchorPane>
